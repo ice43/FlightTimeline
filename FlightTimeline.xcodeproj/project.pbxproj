@@ -11,6 +11,12 @@
 		CD95EE102BA2DE4D00FB0A96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD95EE0F2BA2DE4D00FB0A96 /* ContentView.swift */; };
 		CD95EE122BA2DE4F00FB0A96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD95EE112BA2DE4F00FB0A96 /* Assets.xcassets */; };
 		CD95EE152BA2DE4F00FB0A96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD95EE142BA2DE4F00FB0A96 /* Preview Assets.xcassets */; };
+		CD95EE222BA2DF4900FB0A96 /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD95EE1D2BA2DF4900FB0A96 /* TimelineTableViewCell.swift */; };
+		CD95EE232BA2DF4900FB0A96 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD95EE1E2BA2DF4900FB0A96 /* Timeline.swift */; };
+		CD95EE242BA2DF4900FB0A96 /* TimelinePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD95EE202BA2DF4900FB0A96 /* TimelinePoint.swift */; };
+		CD95EE252BA2DF4900FB0A96 /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD95EE212BA2DF4900FB0A96 /* TimelineTableViewCell.xib */; };
+		CD95EE292BA2DF6100FB0A96 /* FlightInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD95EE272BA2DF6100FB0A96 /* FlightInformation.swift */; };
+		CD95EE2A2BA2DF6100FB0A96 /* FlightHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD95EE282BA2DF6100FB0A96 /* FlightHistory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,13 @@
 		CD95EE0F2BA2DE4D00FB0A96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD95EE112BA2DE4F00FB0A96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD95EE142BA2DE4F00FB0A96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD95EE1D2BA2DF4900FB0A96 /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
+		CD95EE1E2BA2DF4900FB0A96 /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		CD95EE1F2BA2DF4900FB0A96 /* TimelineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineTableViewCell.h; sourceTree = "<group>"; };
+		CD95EE202BA2DF4900FB0A96 /* TimelinePoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelinePoint.swift; sourceTree = "<group>"; };
+		CD95EE212BA2DF4900FB0A96 /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineTableViewCell.xib; sourceTree = "<group>"; };
+		CD95EE272BA2DF6100FB0A96 /* FlightInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightInformation.swift; sourceTree = "<group>"; };
+		CD95EE282BA2DF6100FB0A96 /* FlightHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightHistory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +65,10 @@
 			isa = PBXGroup;
 			children = (
 				CD95EE0D2BA2DE4D00FB0A96 /* FlightTimelineApp.swift */,
+				CD95EE1C2BA2DF4900FB0A96 /* TimelineTableViewCell */,
+				CD95EE262BA2DF6100FB0A96 /* Models */,
 				CD95EE0F2BA2DE4D00FB0A96 /* ContentView.swift */,
-				CD95EE112BA2DE4F00FB0A96 /* Assets.xcassets */,
+				CD95EE1B2BA2DE5C00FB0A96 /* Resources */,
 				CD95EE132BA2DE4F00FB0A96 /* Preview Content */,
 			);
 			path = FlightTimeline;
@@ -65,6 +80,35 @@
 				CD95EE142BA2DE4F00FB0A96 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD95EE1B2BA2DE5C00FB0A96 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD95EE112BA2DE4F00FB0A96 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD95EE1C2BA2DF4900FB0A96 /* TimelineTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CD95EE1D2BA2DF4900FB0A96 /* TimelineTableViewCell.swift */,
+				CD95EE1E2BA2DF4900FB0A96 /* Timeline.swift */,
+				CD95EE1F2BA2DF4900FB0A96 /* TimelineTableViewCell.h */,
+				CD95EE202BA2DF4900FB0A96 /* TimelinePoint.swift */,
+				CD95EE212BA2DF4900FB0A96 /* TimelineTableViewCell.xib */,
+			);
+			path = TimelineTableViewCell;
+			sourceTree = "<group>";
+		};
+		CD95EE262BA2DF6100FB0A96 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD95EE272BA2DF6100FB0A96 /* FlightInformation.swift */,
+				CD95EE282BA2DF6100FB0A96 /* FlightHistory.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD95EE152BA2DE4F00FB0A96 /* Preview Assets.xcassets in Resources */,
+				CD95EE252BA2DF4900FB0A96 /* TimelineTableViewCell.xib in Resources */,
 				CD95EE122BA2DE4F00FB0A96 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD95EE232BA2DF4900FB0A96 /* Timeline.swift in Sources */,
 				CD95EE102BA2DE4D00FB0A96 /* ContentView.swift in Sources */,
+				CD95EE292BA2DF6100FB0A96 /* FlightInformation.swift in Sources */,
+				CD95EE222BA2DF4900FB0A96 /* TimelineTableViewCell.swift in Sources */,
 				CD95EE0E2BA2DE4D00FB0A96 /* FlightTimelineApp.swift in Sources */,
+				CD95EE2A2BA2DF6100FB0A96 /* FlightHistory.swift in Sources */,
+				CD95EE242BA2DF4900FB0A96 /* TimelinePoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +325,12 @@
 				DEVELOPMENT_TEAM = V3YK82Q5NN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Flight Timeline";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +338,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = broski43.FlightTimeline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,11 +359,12 @@
 				DEVELOPMENT_TEAM = V3YK82Q5NN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Flight Timeline";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +372,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = broski43.FlightTimeline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
