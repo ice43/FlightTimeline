@@ -17,6 +17,7 @@
 		CD95EE252BA2DF4900FB0A96 /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD95EE212BA2DF4900FB0A96 /* TimelineTableViewCell.xib */; };
 		CD95EE292BA2DF6100FB0A96 /* FlightInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD95EE272BA2DF6100FB0A96 /* FlightInformation.swift */; };
 		CD95EE2A2BA2DF6100FB0A96 /* FlightHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD95EE282BA2DF6100FB0A96 /* FlightHistory.swift */; };
+		CD95EE2C2BA2E09F00FB0A96 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD95EE2B2BA2E09F00FB0A96 /* TimelineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		CD95EE212BA2DF4900FB0A96 /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineTableViewCell.xib; sourceTree = "<group>"; };
 		CD95EE272BA2DF6100FB0A96 /* FlightInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightInformation.swift; sourceTree = "<group>"; };
 		CD95EE282BA2DF6100FB0A96 /* FlightHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightHistory.swift; sourceTree = "<group>"; };
+		CD95EE2B2BA2E09F00FB0A96 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				CD95EE1C2BA2DF4900FB0A96 /* TimelineTableViewCell */,
 				CD95EE262BA2DF6100FB0A96 /* Models */,
 				CD95EE0F2BA2DE4D00FB0A96 /* ContentView.swift */,
+				CD95EE2B2BA2E09F00FB0A96 /* TimelineView.swift */,
 				CD95EE1B2BA2DE5C00FB0A96 /* Resources */,
 				CD95EE132BA2DE4F00FB0A96 /* Preview Content */,
 			);
@@ -189,6 +192,7 @@
 				CD95EE0E2BA2DE4D00FB0A96 /* FlightTimelineApp.swift in Sources */,
 				CD95EE2A2BA2DF6100FB0A96 /* FlightHistory.swift in Sources */,
 				CD95EE242BA2DF4900FB0A96 /* TimelinePoint.swift in Sources */,
+				CD95EE2C2BA2E09F00FB0A96 /* TimelineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
