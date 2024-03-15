@@ -22,14 +22,10 @@ struct LoginView: View {
             
             VStack(spacing: 20) {
                 TextField("Enter your name", text: $loginViewVM.user.name)
-                    .autocorrectionDisabled()
-                    .textInputAutocapitalization(.never)
-                    .multilineTextAlignment(.leading)
+                    .loginTextFieldSetup()
                 
                 SecureField("Enter your password", text: $loginViewVM.user.pass)
-                    .autocorrectionDisabled()
-                    .textInputAutocapitalization(.never)
-                    .multilineTextAlignment(.leading)
+                    .loginSecureFieldSetup()
             }
             .padding(.leading, 20)
         }
@@ -58,4 +54,25 @@ struct LoginView: View {
 
 #Preview {
     LoginView(loginViewVM: LoginViewViewModel())
+}
+
+struct FieldViewModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .autocorrectionDisabled()
+            .textInputAutocapitalization(.never)
+            .multilineTextAlignment(.leading)
+    }
+}
+
+extension TextField {
+    func loginTextFieldSetup() -> some View {
+        modifier(FieldViewModifier())
+    }
+}
+
+extension SecureField {
+    func loginSecureFieldSetup() -> some View {
+        modifier(FieldViewModifier())
+    }
 }
