@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    var loginViewVM: LoginViewViewModel
+    
     var body: some View {
         TabView {
             HomeView()
@@ -16,7 +18,7 @@ struct ContentView: View {
                     Text("Home")
                 }
             
-            UserProfile()
+            UserProfile(loginViewVM: loginViewVM)
                 .tabItem {
                     Image(systemName: "person.circle")
                     Text("Profile")
@@ -26,5 +28,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ContentView(loginViewVM: LoginViewViewModel())
 }

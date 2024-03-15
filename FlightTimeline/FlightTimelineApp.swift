@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct FlightTimelineApp: App {
+    @State private var loginViewVM = LoginViewViewModel(
+        user: StorageManager.shared.loadUser()
+    )
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView(loginViewVM: loginViewVM)
         }
     }
 }

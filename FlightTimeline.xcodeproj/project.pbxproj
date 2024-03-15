@@ -23,6 +23,11 @@
 		CD95EE322BA2E65600FB0A96 /* FlightBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD95EE312BA2E65600FB0A96 /* FlightBoardView.swift */; };
 		CD95EE342BA2F24D00FB0A96 /* FlightRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD95EE332BA2F24D00FB0A96 /* FlightRowView.swift */; };
 		CD95EE362BA2F46900FB0A96 /* FlightDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD95EE352BA2F46900FB0A96 /* FlightDetailsView.swift */; };
+		CD99F83A2BA32D3800A6403A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F8392BA32D3800A6403A /* LoginView.swift */; };
+		CD99F83C2BA32D8A00A6403A /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F83B2BA32D8A00A6403A /* LoginViewViewModel.swift */; };
+		CD99F83E2BA32DD400A6403A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F83D2BA32DD400A6403A /* User.swift */; };
+		CD99F8412BA32E3400A6403A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F8402BA32E3400A6403A /* StorageManager.swift */; };
+		CD99F8432BA3337900A6403A /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F8422BA3337900A6403A /* RootView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +49,11 @@
 		CD95EE312BA2E65600FB0A96 /* FlightBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightBoardView.swift; sourceTree = "<group>"; };
 		CD95EE332BA2F24D00FB0A96 /* FlightRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRowView.swift; sourceTree = "<group>"; };
 		CD95EE352BA2F46900FB0A96 /* FlightDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailsView.swift; sourceTree = "<group>"; };
+		CD99F8392BA32D3800A6403A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CD99F83B2BA32D8A00A6403A /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
+		CD99F83D2BA32DD400A6403A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CD99F8402BA32E3400A6403A /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		CD99F8422BA3337900A6403A /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +89,9 @@
 				CD95EE0D2BA2DE4D00FB0A96 /* FlightTimelineApp.swift */,
 				CD95EE1C2BA2DF4900FB0A96 /* TimelineTableViewCell */,
 				CD95EE262BA2DF6100FB0A96 /* Models */,
+				CD99F8442BA334F700A6403A /* LoginView */,
 				CD95EE372BA3071C00FB0A96 /* Views */,
+				CD99F83F2BA32E1D00A6403A /* Services */,
 				CD95EE1B2BA2DE5C00FB0A96 /* Resources */,
 				CD95EE132BA2DE4F00FB0A96 /* Preview Content */,
 			);
@@ -119,6 +131,7 @@
 			children = (
 				CD95EE272BA2DF6100FB0A96 /* FlightInformation.swift */,
 				CD95EE282BA2DF6100FB0A96 /* FlightHistory.swift */,
+				CD99F83D2BA32DD400A6403A /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -133,8 +146,26 @@
 				CD95EE332BA2F24D00FB0A96 /* FlightRowView.swift */,
 				CD95EE352BA2F46900FB0A96 /* FlightDetailsView.swift */,
 				CD95EE2F2BA2E4B300FB0A96 /* UserProfile.swift */,
+				CD99F8422BA3337900A6403A /* RootView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CD99F83F2BA32E1D00A6403A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CD99F8402BA32E3400A6403A /* StorageManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CD99F8442BA334F700A6403A /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				CD99F8392BA32D3800A6403A /* LoginView.swift */,
+				CD99F83B2BA32D8A00A6403A /* LoginViewViewModel.swift */,
+			);
+			path = LoginView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,14 +241,19 @@
 			files = (
 				CD95EE2E2BA2E41E00FB0A96 /* HomeView.swift in Sources */,
 				CD95EE232BA2DF4900FB0A96 /* Timeline.swift in Sources */,
+				CD99F8412BA32E3400A6403A /* StorageManager.swift in Sources */,
 				CD95EE362BA2F46900FB0A96 /* FlightDetailsView.swift in Sources */,
 				CD95EE302BA2E4B300FB0A96 /* UserProfile.swift in Sources */,
+				CD99F83E2BA32DD400A6403A /* User.swift in Sources */,
 				CD95EE322BA2E65600FB0A96 /* FlightBoardView.swift in Sources */,
 				CD95EE102BA2DE4D00FB0A96 /* ContentView.swift in Sources */,
 				CD95EE292BA2DF6100FB0A96 /* FlightInformation.swift in Sources */,
 				CD95EE222BA2DF4900FB0A96 /* TimelineTableViewCell.swift in Sources */,
+				CD99F83A2BA32D3800A6403A /* LoginView.swift in Sources */,
 				CD95EE0E2BA2DE4D00FB0A96 /* FlightTimelineApp.swift in Sources */,
+				CD99F83C2BA32D8A00A6403A /* LoginViewViewModel.swift in Sources */,
 				CD95EE2A2BA2DF6100FB0A96 /* FlightHistory.swift in Sources */,
+				CD99F8432BA3337900A6403A /* RootView.swift in Sources */,
 				CD95EE242BA2DF4900FB0A96 /* TimelinePoint.swift in Sources */,
 				CD95EE2C2BA2E09F00FB0A96 /* TimelineView.swift in Sources */,
 				CD95EE342BA2F24D00FB0A96 /* FlightRowView.swift in Sources */,
