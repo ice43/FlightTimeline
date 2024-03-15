@@ -11,6 +11,8 @@ struct LoginView: View {
     @Bindable var loginViewVM: LoginViewViewModel
     
     var body: some View {
+        Spacer()
+        
         HStack {
             VStack(spacing: 20) {
                 LoginText(text: "USERNAME:")
@@ -40,11 +42,17 @@ struct LoginView: View {
         } message: {
             Text("Incorrect username or password")
         }
-        
         .disabled(!loginViewVM.fieldsNotEmpty)
         .offset(y: 15)
         
-
+        Spacer()
+        
+        Button("Forgot password?", action: loginViewVM.forgetPassword)
+            .padding(.bottom, 20)
+            .alert("Welcome back!", isPresented: $loginViewVM.forgetAlertIsPresented, actions: {}
+            ) {
+                Text("USERNAME: \(DataStore.shared.username) PASSWORD: \(DataStore.shared.password)")
+            }
     }
 }
 

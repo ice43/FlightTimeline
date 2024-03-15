@@ -12,6 +12,7 @@ import Observation
 final class LoginViewViewModel  {
     var user = User()
     var alertIsPresented = false
+    var forgetAlertIsPresented = false
     
     var nameIsValid: Bool {
         user.name == dataStore.username && user.pass == dataStore.password
@@ -42,6 +43,10 @@ final class LoginViewViewModel  {
     
     func clearPass() {
         user.pass = ""
+    }
+    
+    func forgetPassword() {
+        forgetAlertIsPresented.toggle()
     }
     
     func login() {
