@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  FlightTimeline
 //
 //  Created by Serge Broski on 3/14/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
     var loginViewVM: LoginViewViewModel
     
     var body: some View {
@@ -28,5 +28,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(loginViewVM: LoginViewViewModel())
+    MainView(loginViewVM: LoginViewViewModel())
 }

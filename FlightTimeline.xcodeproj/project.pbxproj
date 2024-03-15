@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CD95EE0E2BA2DE4D00FB0A96 /* FlightTimelineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD95EE0D2BA2DE4D00FB0A96 /* FlightTimelineApp.swift */; };
-		CD95EE102BA2DE4D00FB0A96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD95EE0F2BA2DE4D00FB0A96 /* ContentView.swift */; };
+		CD95EE102BA2DE4D00FB0A96 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD95EE0F2BA2DE4D00FB0A96 /* MainView.swift */; };
 		CD95EE122BA2DE4F00FB0A96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD95EE112BA2DE4F00FB0A96 /* Assets.xcassets */; };
 		CD95EE152BA2DE4F00FB0A96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD95EE142BA2DE4F00FB0A96 /* Preview Assets.xcassets */; };
 		CD95EE222BA2DF4900FB0A96 /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD95EE1D2BA2DF4900FB0A96 /* TimelineTableViewCell.swift */; };
@@ -28,12 +28,14 @@
 		CD99F83E2BA32DD400A6403A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F83D2BA32DD400A6403A /* User.swift */; };
 		CD99F8412BA32E3400A6403A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F8402BA32E3400A6403A /* StorageManager.swift */; };
 		CD99F8432BA3337900A6403A /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F8422BA3337900A6403A /* RootView.swift */; };
+		CDB970132BA44EA800122A3C /* LoginText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB970122BA44EA800122A3C /* LoginText.swift */; };
+		CDB970172BA45E9000122A3C /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB970162BA45E9000122A3C /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CD95EE0A2BA2DE4D00FB0A96 /* FlightTimeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightTimeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD95EE0D2BA2DE4D00FB0A96 /* FlightTimelineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTimelineApp.swift; sourceTree = "<group>"; };
-		CD95EE0F2BA2DE4D00FB0A96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD95EE0F2BA2DE4D00FB0A96 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CD95EE112BA2DE4F00FB0A96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD95EE142BA2DE4F00FB0A96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD95EE1D2BA2DF4900FB0A96 /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		CD99F83D2BA32DD400A6403A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CD99F8402BA32E3400A6403A /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		CD99F8422BA3337900A6403A /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		CDB970122BA44EA800122A3C /* LoginText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginText.swift; sourceTree = "<group>"; };
+		CDB970162BA45E9000122A3C /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +143,7 @@
 		CD95EE372BA3071C00FB0A96 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CD95EE0F2BA2DE4D00FB0A96 /* ContentView.swift */,
+				CD95EE0F2BA2DE4D00FB0A96 /* MainView.swift */,
 				CD95EE2B2BA2E09F00FB0A96 /* TimelineView.swift */,
 				CD95EE2D2BA2E41E00FB0A96 /* HomeView.swift */,
 				CD95EE312BA2E65600FB0A96 /* FlightBoardView.swift */,
@@ -155,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				CD99F8402BA32E3400A6403A /* StorageManager.swift */,
+				CDB970162BA45E9000122A3C /* DataStore.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 			children = (
 				CD99F8392BA32D3800A6403A /* LoginView.swift */,
 				CD99F83B2BA32D8A00A6403A /* LoginViewViewModel.swift */,
+				CDB970122BA44EA800122A3C /* LoginText.swift */,
 			);
 			path = LoginView;
 			sourceTree = "<group>";
@@ -246,11 +252,13 @@
 				CD95EE302BA2E4B300FB0A96 /* UserProfile.swift in Sources */,
 				CD99F83E2BA32DD400A6403A /* User.swift in Sources */,
 				CD95EE322BA2E65600FB0A96 /* FlightBoardView.swift in Sources */,
-				CD95EE102BA2DE4D00FB0A96 /* ContentView.swift in Sources */,
+				CD95EE102BA2DE4D00FB0A96 /* MainView.swift in Sources */,
 				CD95EE292BA2DF6100FB0A96 /* FlightInformation.swift in Sources */,
+				CDB970132BA44EA800122A3C /* LoginText.swift in Sources */,
 				CD95EE222BA2DF4900FB0A96 /* TimelineTableViewCell.swift in Sources */,
 				CD99F83A2BA32D3800A6403A /* LoginView.swift in Sources */,
 				CD95EE0E2BA2DE4D00FB0A96 /* FlightTimelineApp.swift in Sources */,
+				CDB970172BA45E9000122A3C /* DataStore.swift in Sources */,
 				CD99F83C2BA32D8A00A6403A /* LoginViewViewModel.swift in Sources */,
 				CD95EE2A2BA2DF6100FB0A96 /* FlightHistory.swift in Sources */,
 				CD99F8432BA3337900A6403A /* RootView.swift in Sources */,
@@ -399,6 +407,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -433,6 +442,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

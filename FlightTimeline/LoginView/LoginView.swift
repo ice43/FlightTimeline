@@ -11,37 +11,39 @@ struct LoginView: View {
     @Bindable var loginViewVM: LoginViewViewModel
     
     var body: some View {
-        VStack(spacing: 20) {
-            HStack(spacing: 20) {
-                Text("USERNAME:")
-                    .font(.subheadline)
-                    .opacity(0.4)
-                                            
+        HStack {
+            VStack(spacing: 20) {
+                LoginText(text: "USERNAME:")
+                LoginText(text: "PASSWORD:")
+            }
+            .padding(.leading, 30)
+            
+            VStack(spacing: 20) {
                 TextField("Enter your name", text: $loginViewVM.user.name)
                     .autocorrectionDisabled()
                     .textInputAutocapitalization(.never)
                     .multilineTextAlignment(.leading)
-            }
-            .padding(.leading, 30)
-            
-            HStack(spacing: 19) {
-                Text("PASSWORD:")
-                    .font(.subheadline)
-                    .opacity(0.4)
                 
                 SecureField("Enter your password", text: $loginViewVM.user.pass)
                     .autocorrectionDisabled()
                     .textInputAutocapitalization(.never)
                     .multilineTextAlignment(.leading)
             }
-            .padding(.leading, 30)
-            
-            
-            Button(action: loginViewVM.login) {
-                Label("Log in", systemImage: "checkmark.circle")
-            }
-            .disabled(!loginViewVM.nameIsValid)
+            .padding(.leading, 20)
         }
+        
+        Button(action: loginViewVM.checkLogin) {
+            Label("Log in", systemImage: "checkmark.circle")
+        }
+        .alert("Error", isPresented: $loginViewVM.alertIsPresented) {
+            Button("OK") { loginViewVM.clearPass() }
+        } message: {
+            Text("Incorrect username or password")
+        }
+        
+        .disabled(!loginViewVM.fieldsNotEmpty)
+        .offset(y: 15)
+        
 
     }
 }

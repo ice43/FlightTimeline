@@ -11,15 +11,37 @@ import Observation
 @Observable
 final class LoginViewViewModel  {
     var user = User()
+    var alertIsPresented = false
     
     var nameIsValid: Bool {
+        user.name == dataStore.username && user.pass == dataStore.password
+    }
+    
+    var fieldsNotEmpty: Bool {
         !user.name.isEmpty && !user.pass.isEmpty
     }
     
     private let storageManager = StorageManager.shared
+    private let dataStore = DataStore.shared
     
     init(user: User = User()) {
         self.user = user
+    }
+    
+    func checkLogin() {
+        if fieldsNotEmpty, nameIsValid {
+            login()
+        } else {
+            showAlert()
+        }
+    }
+    
+    func showAlert() {
+        alertIsPresented.toggle()
+    }
+    
+    func clearPass() {
+        user.pass = ""
     }
     
     func login() {

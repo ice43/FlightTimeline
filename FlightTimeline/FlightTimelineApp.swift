@@ -16,6 +16,7 @@ struct FlightTimelineApp: App {
     var body: some Scene {
         WindowGroup {
             RootView(loginViewVM: loginViewVM)
+                .tint(.pink)
         }
     }
 }

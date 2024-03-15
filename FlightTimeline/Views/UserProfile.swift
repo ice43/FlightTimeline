@@ -11,12 +11,15 @@ struct UserProfile: View {
     var loginViewVM: LoginViewViewModel
     
     var body: some View {
-        VStack {
+        VStack(spacing: 30) {
             Spacer()
             
             Image(systemName: "person.circle")
                 .resizable()
                 .frame(width: 120, height: 120)
+            
+            Text("Hello, \(loginViewVM.user.name)!")
+                .font(.largeTitle)
             
             Spacer()
             
@@ -29,10 +32,8 @@ struct UserProfile: View {
             .background(.tint)
             .clipShape(Capsule())
           
-            
             Spacer()
         }
-        
     }
 }
 

@@ -23,6 +23,7 @@ struct TimelineView: UIViewControllerRepresentable {
         )
         
         uiViewController.tableView.dataSource = context.coordinator
+        uiViewController.tableView.delegate = context.coordinator
     }
     
     func makeCoordinator() -> Coordinator {
@@ -31,7 +32,7 @@ struct TimelineView: UIViewControllerRepresentable {
 }
 
 extension TimelineView {
-    final class Coordinator: NSObject, UITableViewDataSource {
+    final class Coordinator: NSObject, UITableViewDataSource, UITableViewDelegate {
         let flights: [FlightInformation]
         
         init(flights: [FlightInformation]) {
@@ -75,6 +76,10 @@ extension TimelineView {
             cell.bubbleColor = flight.timelineColor
             
             return cell
+        }
+        
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            tableView.deselectRow(at: indexPath, animated: true)
         }
     }
 }
